@@ -55,54 +55,54 @@ function playAnimation(e) {
     player.style.marginLeft = posX + "%";
     sprite = document.getElementById("player-sprite");
     setTimeout(function() {
-      sprite.style.background = "url('/img/wlk/1.png')";
+      sprite.style.background = "url('img/wlk/1.png')";
     }, 50);
     setTimeout(function() {
-      sprite.style.background = "url('/img/wlk/2.png')";
+      sprite.style.background = "url('img/wlk/2.png')";
     }, 100);
     setTimeout(function() {
-      sprite.style.background = "url('/img/wlk/3.png')";
+      sprite.style.background = "url('img/wlk/3.png')";
     }, 150);
     setTimeout(function() {
-      sprite.style.background = "url('/img/wlk/4.png')";
+      sprite.style.background = "url('img/wlk/4.png')";
     }, 200);
     setTimeout(function() {
-      sprite.style.background = "url('/img/wlk/5.png')";
+      sprite.style.background = "url('img/wlk/5.png')";
     }, 250);
     setTimeout(function() {
-      sprite.style.background = "url('/img/idle.png')";
+      sprite.style.background = "url('img/idle.png')";
     }, 300);
   }
 
   function slash() {
     sprite = document.getElementById("player-sprite");
     setTimeout(function() {
-      sprite.style.background = "url('/img/atk/1.png')";
+      sprite.style.background = "url('img/atk/1.png')";
     }, 50);
     setTimeout(function() {
-      sprite.style.background = "url('/img/atk/2.png')";
+      sprite.style.background = "url('img/atk/2.png')";
     }, 100);
     setTimeout(function() {
-      sprite.style.background = "url('/img/atk/3.png')";
+      sprite.style.background = "url('img/atk/3.png')";
     }, 150);
     setTimeout(function() {
-      sprite.style.background = "url('/img/atk/4.png')";
+      sprite.style.background = "url('img/atk/4.png')";
     }, 200);
     setTimeout(function() {
-      sprite.style.background = "url('/img/atk/5.png')";
+      sprite.style.background = "url('img/atk/5.png')";
     }, 250);
     setTimeout(function() {
-      sprite.style.background = "url('/img/idle.png')";
+      sprite.style.background = "url('img/idle.png')";
     }, 300);
   }
 
   function hey() {
     sprite = document.getElementById("player-sprite");
     setTimeout(function() {
-      sprite.style.background = "url('/img/death.png')";
+      sprite.style.background = "url('img/death.png')";
     }, 0);
     setTimeout(function() {
-      sprite.style.background = "url('/img/idle.png')";
+      sprite.style.background = "url('img/idle.png')";
     }, 1000);
   }
 
