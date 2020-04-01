@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS1/30 Nato</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="game-container">
+
+    <div id="game-screen">
+      <div id="player">
+        <div id="player-sprite"></div>
+      </div>
+    </div>
+
+    <div class="keys keys-holder">
+      <div>
+        <div class="keys">
+          <div data-key="87" class="key">
+            <kbd>W</kbd>
+            <span class="sound">UP</span>
+          </div>
+        </div>
+
+        <div class="keys">
+          <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">LEFT</span>
+          </div>
+          <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">DOWN</span>
+          </div>
+          <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">RIGHT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="keys">
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">ATTACK</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">STRONG</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">DIE</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <audio data-key="87" src="sounds/step.wav"></audio>
+  <audio data-key="65" src="sounds/step.wav"></audio>
+  <audio data-key="83" src="sounds/step.wav"></audio>
+  <audio data-key="68" src="sounds/step.wav"></audio>
+  <audio data-key="74" src="sounds/atk.wav"></audio>
+  <audio data-key="75" src="sounds/strong_atk.wav"></audio>
+  <audio data-key="76" src="sounds/hey.wav"></audio>
+  <audio id="bg-music" loop="loop" src="sounds/jojo.mp3"></audio>
+
+
+  <script src="src/index.js"></script>
+
+</body>
+
+</html>
