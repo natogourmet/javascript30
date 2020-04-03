@@ -1,0 +1,73 @@
+html {
+  background: #018ded url(img/bg.jpg);
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  background-image: url('img/clock_bg.svg');
+  background-size: 100%;
+}
+
+.clock-hours {
+  width: 100%;
+  height: 100%;
+  background-image: url('img/clock_1.svg');
+  background-size: 100%;
+
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-mins {
+  width: 100%;
+  height: 100%;
+  background-image: url('img/clock_2.svg');
+  background-size: 100%;
+  opacity: 70%;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-secs {
+  width: 100%;
+  height: 100%;
+  background-image: url('img/clock_3.svg');
+  background-size: 100%;
+}
+
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+
+.hand {
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0, 0, 0, 0);
+  position: absolute;
+}
