@@ -1,0 +1,66 @@
+:root {
+    --base: #c21f1f;
+    --spacing: 10px;
+    --blur: 10px;
+    --roadOffset: 0px;
+    --carPos: 0%;
+}
+
+
+body {
+  text-align: center;
+  color: white;
+  background: url(img/bg.jpg);
+  background-size: cover;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.bg-img {
+  background: url(img/road.png);
+  position: absolute;
+}
+
+.road {
+  position: relative;
+  margin: auto;
+  background-image: url(img/road.png);
+  background-size: 512px;
+  width: 512px;
+  height: 512px;
+  overflow: hidden;
+  background-position-y: var(--roadOffset);
+}
+
+.car-path {
+  margin-left: 221px;
+  margin-right: 42px;
+  height: 100%;
+  width: auto;
+}
+
+.car {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background-image: url(img/car.png);
+  top: 80%;
+  left: var(--carPos);
+}
+
+.enemy-car {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background-image: url(img/enemy_car.png);
+  left: var(--carPos);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
