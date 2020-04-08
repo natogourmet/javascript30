@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-position-y: center;
+  font-size: 2rem;
+}
+
+body.dark {
+  background: url(img/dark-bg.gif);
+}
+
+
+body.dark > .story-container{
+    background: none;
+  }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+.search-form {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+input.search {
+  font-family: "Seaweed Script", cursive;
+  font-size: 0.5rem;
+  margin: 0;
+  text-align: center;
+  outline: 0;
+  width: 100%;
+  height: 2rem;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  font-size: 40px;
+  box-shadow: 0 20px 50px black;
+
+}
+
+input.search-form {
+  font-size: 0.5rem;
+
+}
+
+.story-container {
+  font-family: "Seaweed Script", cursive;
+  background: url("img/witness-bg.jpg");
+  background-size: cover;
+  margin: 50px;
+  width: 30%;
+  height: auto;
+  box-shadow: 0 20px 50px black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: color 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.story-container.dark {
+    color: red;
+}
+
+.story-container h1 {
+  margin: 1rem;
+}
+
+.story-container p {
+  margin: 1rem;
+}
+
+.story-container span {
+  text-align: right;
+  margin-top: 2rem;
+}
