@@ -1,0 +1,77 @@
+:root {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+
+div {
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+span {
+  font-size: 1.5rem;
+  font-family: "VT323";
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.first-container {
+  width: 100%;
+  padding: 2rem;
+  z-index: 10;
+}
+
+img {
+  width: 20%;
+}
+
+.second-container {
+  width: 100%;
+  padding: 2rem;
+  background-color: #827397;
+  z-index: 9;
+}
+
+.second-container h2 {
+  color: #363062;
+}
+
+.third-container {
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  background-color: #363062;
+  z-index: 8;
+}
+
+.forth-container {
+  color: #204051;
+  width: 100%;
+  padding: 2rem;
+  background-color: #3b6978;
+  z-index: 7;
+}
+
+.fifth-container {
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  background-color: black;
+  z-index: 7;
+}
+
+.fifth-container span{
+    color: black;
+    background-color: white;
+  }
