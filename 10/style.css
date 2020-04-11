@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: url('img/bg.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0 20%;
+}
+
+.container:first-child img {
+    transform: rotate(180deg);
+}
+
+.container:first-child label input[type="checkbox"]:checked ~ img {
+    transform: rotate(270deg);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+label {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: solid 3px rgb(40, 9, 2);
+    border-radius: 2px;
+}
+
+label img {
+    width: 100%; 
+    transition: transform 1s ease-out;
+}
+
+label input[type="checkbox"] {
+    display: none;
+}
+
+label input[type="checkbox"]:checked ~ img {
+    transform: rotate(90deg);
+}
