@@ -14,7 +14,7 @@ jobs:
       - uses: ethomson/send-tweet-action@v1
         with:
           status: "Hi, this is a test!"
-          consumer-key: ${{ KP3kmBSrxx3sv6rpnwOq1xTCE }}
-          consumer-secret: ${{ v76GLrIUPzqSHXxklGxrb2cAe6OFrBdVtGThIy77OGczhmCkhR }}
-          access-token: ${{ 1134010227941158912-UarUNl5v6RD5hPN1E5tJQgBlmaSeCx }}
-          access-token-secret: ${{ YsAW91qLSXJePFxMTSpSEWr6J4zOGGl1deIULQ1p9hlVH }}
+          consumer-key: KP3kmBSrxx3sv6rpnwOq1xTCE
+          consumer-secret: v76GLrIUPzqSHXxklGxrb2cAe6OFrBdVtGThIy77OGczhmCkhR
+          access-token: 1134010227941158912-UarUNl5v6RD5hPN1E5tJQgBlmaSeCx
+          access-token-secret: YsAW91qLSXJePFxMTSpSEWr6J4zOGGl1deIULQ1p9hlVH
