@@ -1,0 +1,20 @@
+# This workflow will triage pull requests and apply a label based on the
+# paths that are modified in the pull request.
+#
+# To use this workflow, you will need to set up a .github/labeler.yml
+# file with configuration.  For more information, see:
+# https://github.com/actions/labeler/blob/master/README.md
+
+name: Send a Tweet
+on: [push]
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ethomson/send-tweet-action@v1
+        with:
+          status: "Hi, this is a test!"
+          consumer-key: ${{ KP3kmBSrxx3sv6rpnwOq1xTCE }}
+          consumer-secret: ${{ v76GLrIUPzqSHXxklGxrb2cAe6OFrBdVtGThIy77OGczhmCkhR }}
+          access-token: ${{ 1134010227941158912-UarUNl5v6RD5hPN1E5tJQgBlmaSeCx }}
+          access-token-secret: ${{ YsAW91qLSXJePFxMTSpSEWr6J4zOGGl1deIULQ1p9hlVH }}
