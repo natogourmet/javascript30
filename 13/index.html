@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS13/30 Nato</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet" </head>
+
+  <body>
+    <div id="clickme">
+      <span onclick="document.getElementById('main').classList.remove('unactive'); document.getElementById('clickme').classList.add('unactive')">CLICK ME</span>
+
+    </div>
+    <div id="main" class="site-wrap unactive">
+
+      <h1>I CONTROL SPACE AND TIME</h1>
+      <div class="container">
+        <img data-audio="sharingan" src="img/sharingan.gif" class=" slide-in">
+      </div>
+      <h1>TSUKUYOMI</h1>
+      <div class="container">
+        <img data-audio="in" src="img/kakashi.png" class="kakashi slide-in">
+      </div>
+      <div class="container">
+        <img data-audio="into" src="img/kakashi_1.png" class="slide-in">
+        <img src="img/itachi_1.png" class="slide-in overposed delay-1">
+        <img src="img/itachi_2.png" class="slide-in overposed delay-2">
+        <img src="img/itachi_3.png" class="slide-in overposed delay-3">
+        <img src="img/itachi_4.png" class="slide-in overposed delay-4">
+        <img src="img/itachi_5.png" class="slide-in overposed delay-5">
+        <img src="img/itachi_6.png" class="slide-in overposed delay-6">
+
+      </div>
+      <h1>I CAN EVEN CONTROL CORPORAL MASS</h1>
+      <div class="container">
+        <img data-audio="torture" src="img/kakashi_2.png" class="slide-in">
+        <img src="img/itachi_11.png" class="slide-in overposed delay-1 align-right">
+        <img src="img/itachi_12.png" class="slide-in overposed delay-3 align-left">
+
+      </div>
+    </div>
+
+    <audio onended="this.volume=0" data-audio="sharingan" src="audio/sharingan.mp3"></audio>
+    <audio onended="this.volume=0" data-audio="bg" src="audio/bg.mp3" loop="loop"></audio>
+    <audio onended="this.volume=0" data-audio="in" src="audio/in.mp3"></audio>
+    <audio onended="this.volume=0" data-audio="into" src="audio/into.mp3"></audio>
+    <audio onended="this.volume=0" data-audio="into" src="audio/into.mp3"></audio>
+    <audio onended="this.volume=0" data-audio="torture" src="audio/torture.mp3"></audio>
+
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

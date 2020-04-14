@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+  background: url(img/bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -250px;
+  font-family: "Josefin Sans", sans-serif;
+  color: brown;
+  text-shadow: -2px 0px 0px #000, 2px 0px 0px #000, 0px 2px 0px #000,
+    0px -2px 0px #000;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+#clickme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+span {
+  cursor: pointer;
+}
+
+#clickme.unactive {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.site-wrap.unactive {
+  display: none;
+}
+
+.site-wrap {
+  transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 100px auto;
+  background: transparent;
+  padding: 40px;
+  text-align: center;
+}
+
+.site-wrap > * {
+  margin: 5rem 0;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.container > * {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.overposed {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) translateY(30%);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) translateY(30%);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.kakashi {
+  transition: opacity 0.5s, filter 1s 1s;
+}
+
+.kakashi.active {
+  filter: invert(1) grayscale(100);
+}
+
+.delay-1 {
+  transition: opacity 1s 1s, transform 0.5s 1s ease-in;
+}
+.delay-2 {
+  transition: opacity 1s 1.5s;
+}
+.delay-3 {
+  transition: opacity 1s 2s, transform 0.5s 2s ease-in;
+}
+.delay-4 {
+  transition: opacity 1s 2.5s;
+}
+.delay-5 {
+  transition: opacity 1s 3s;
+}
+.delay-6 {
+  transition: opacity 1s 3.5s;
+}
