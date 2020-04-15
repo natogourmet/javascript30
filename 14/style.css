@@ -1,0 +1,49 @@
+:root {
+  font-family: "Montserrat";
+  color: #142850;
+}
+
+body {
+  margin: 0;
+  background-color: #00a8cc;
+}
+
+
+
+div {
+  padding: 2rem;
+  text-align: center;
+  width: 90%;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.hyperlink {
+    font-size: 2rem;
+    padding: 1rem;
+    border: solid 2px white;
+}
+
+i {
+    margin-right: 1rem;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover > .hyperlink {
+    border: solid 2px rgb(202, 202, 202);
+    color: rgb(202, 202, 202);
+}
