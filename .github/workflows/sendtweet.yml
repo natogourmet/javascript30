@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "Now this challenge may be a bit more interesting for those who love anime! I liked how it ended up looking (We're halfway through)
+          status: "Spooky scary theme for this challenge, hope you all like it!
           \n
-          \nDay 15/30 
-          \nGo check it at: https://natogourmet.github.io/javascript30/15/
+          \nDay 16/30 
+          \nGo check it at: https://natogourmet.github.io/javascript30/16/
           \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_KEY_SECRET }}

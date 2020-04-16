@@ -1,0 +1,73 @@
+:root {
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+  font-family: "Beth Ellen";
+}
+
+.flashlight {
+  content: " ";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 20vmax at var(--cursorX) var(--cursorY),
+    #00000000 0%,
+    #00000080 80%,
+    #000000 100%
+  );
+}
+
+.flashlight.unactive {
+  background: black;
+}
+
+.clickme {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.clickme h1 {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.clickme.hide {
+  display: none;
+}
+
+html {
+  color: black;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url(img/bg.jpg);
+  background-size: contain;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+h1 {
+  color: brown;
+  text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+  font-size: 5rem;
+}
