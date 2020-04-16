@@ -13,9 +13,11 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "Quite boring challenge...
-          \n Day 14/30 https://natogourmet.github.io/javascript30/14/
-          \n #CodexJavaScript30"
+          status: "Now this challenge may be a bit more interesting for those who love anime! I liked how it ended up looking (We're halfway through)
+          \n
+          \nDay 15/30 
+          \nGo check it at: https://natogourmet.github.io/javascript30/15/
+          \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_KEY_SECRET }}
           access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
