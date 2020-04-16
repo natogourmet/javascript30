@@ -28,7 +28,7 @@ function populateList(plates = [], platesList) {
           <td><input type="checkbox" data-index=${i} id="item${i}" ${anime.watched ? "checked" : ""}><label for="item${i}"><i class="fas fa-eye${anime.watched ? "" : "-slash"}"></i></label></td>
           <td>${anime.name}</td>
           <td>${anime.chapter}</td>
-          <td><a class="hyperlink" href="${anime.link} target="_blank">GO WATCH IT</a></td>
+          <td><a class="hyperlink" href="${anime.link}" target="_blank">GO WATCH IT</a></td>
         </tr>
       `;
     })
