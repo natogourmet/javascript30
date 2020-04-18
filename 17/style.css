@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  background: url("https://wallpapertag.com/wallpaper/full/7/d/7/652696-cool-slipknot-2018-wallpaper-1920x1080-notebook.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#bands {
+  list-style: inside square;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 500px;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+#bands li {
+  border-bottom: 1px solid #efefef;
+  padding: 20px;
+}
+
+#bands li:last-child {
+  border-bottom: 0;
+}
+
+a {
+  color: #ffc600;
+  text-decoration: none;
+}
