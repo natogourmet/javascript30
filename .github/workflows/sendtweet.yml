@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "My fav number of challenges completed! 18!. For todays i used a template from internet and modified a lot of CSS 
+          status: "THIS ONE WAS PRETTY DAMN COOL! Test it on your own risk... Enjoy! 
           \n
-          \nDay 18/30 
-          \nGo check it at: https://natogourmet.github.io/javascript30/18/
+          \nDay 19/30 
+          \nGo check it at: https://natogourmet.github.io/javascript30/19/
           \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_KEY_SECRET }}
