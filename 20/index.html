@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS20/30 Nato</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="section">
+    <img src="img/duolingo.png" alt="">
+    <div class="button start-button" onclick="begin()"><span>LET'S BEGIN</span></div>
+  </main>
+  <div class="section question unactive" style="display: none">
+    <div class="progress-bar">
+    </div>
+    <h1>Say the next sentence</h1>
+    <div class="sentence">
+      <p>nothing</p>
+    </div>
+    <div class="sentence answer">
+      <p>your voice will be printed here</p>
+    </div>
+    <div class="continue unactive correct">
+      <h2>You are correct</h2>
+      <h2>You are wrong</h2>
+      <div class="button continue-button" onclick="oncontinue()"><span>CONTINUE</span></div>
+    </div>
+  </div>
+
+  <audio id="audio-intro" src="audio/intro.mp3"></audio>
+  <audio id="audio-correct" src="audio/correct.mp3"></audio>
+  <audio id="audio-wrong" src="audio/wrong.mp3"></audio>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
