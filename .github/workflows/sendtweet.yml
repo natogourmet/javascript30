@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "Hahaha, i thinks i made a pretty nice Duolingo copy! obviously not the sentences... 
+          status: "Today's challenge is cool but not so editable, just some CSS, not in the mood rn tho 
           \n
-          \nDay 20/30 
-          \nGo check it at: https://natogourmet.github.io/javascript30/20/
+          \nDay 21/30 
+          \nGo check it at: https://natogourmet.github.io/javascript30/21/
           \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_KEY_SECRET }}
