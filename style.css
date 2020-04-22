@@ -2,7 +2,7 @@
   font-family: "Montserrat";
   color: white;
   background: black;
-  --completed: 63;
+  --completed: 70;
 }
 
 ::-webkit-scrollbar {
@@ -130,7 +130,7 @@ body {
 
 .progress {
   width: 100vw;
-  padding: 50px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,6 +236,8 @@ body {
   position: absolute;
   width: 100%;
   text-align: center;
+  text-shadow: 0 0 5px black;
+  height: auto;
 }
 
 .container .card .face.face1 img {
