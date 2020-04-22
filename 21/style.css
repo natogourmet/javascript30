@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .outter-circle {
@@ -63,6 +64,8 @@ body {
   position: absolute;
   filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
     drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform: rotate(0deg);
 }
 
 .pk-1 {
