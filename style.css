@@ -2,7 +2,7 @@
   font-family: "Montserrat";
   color: white;
   background: black;
-  --completed: 70;
+  --completed: 80;
 }
 
 ::-webkit-scrollbar {

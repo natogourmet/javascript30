@@ -1,0 +1,208 @@
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: "VT323";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.start-click {
+  cursor: pointer;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  text-shadow: 0 0 2px black;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 10;
+}
+
+.main {
+  position: relative;
+  width: 10000vw;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-position: bottom;
+}
+
+.character {
+  width: 112px;
+  height: 112px;
+  background: url(img/mario_spritesheet.png);
+  position: absolute;
+  bottom: 64px;
+  left: -100px;
+  transition: all 3s linear;
+  animation: animate 0.1s linear infinite;
+}
+@keyframes animate {
+  0%,
+  33.32% {
+    background-position-x: 0px;
+  }
+  33.33%,
+  66.65% {
+    background-position-x: 112px;
+  }
+  66.66%,
+  99.99% {
+    background-position-x: 224px;
+  }
+}
+
+.character.start {
+  left: 90vw;
+}
+
+.character.fixed {
+  position: fixed;
+}
+
+.enemy-container {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  top: 20vh;
+  left: 300vw;
+  transform: rotate(0deg);
+  animation: rotation 3s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.enemy-container.fixed {
+  position: fixed;
+}
+
+.enemy {
+  position: relative;
+  top: 100px;
+  right: 100px;
+  width: 112px;
+  height: 112px;
+  background: url(img/sun.png);
+  transition: all 3s linear;
+  animation: inner-rotation 3s linear infinite;
+}
+@keyframes inner-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  max-width: 700px;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+header {
+  text-align: center;
+  height: 50vh;
+  background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+li.logo a {
+  color: black;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}

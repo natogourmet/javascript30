@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "And today i couldn't spend as much time as i'd like... also not in the mood again, hope y'all like it  
+          status: "Another nostalgic theme for today's challenge, hope y'all enjoy it  
           \n
-          \nDay 23/30 
-          \nGo check it at: https://natogourmet.github.io/javascript30/23/
+          \nDay 24/30 
+          \nGo check it at: https://natogourmet.github.io/javascript30/24/
           \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_KEY_SECRET }}
