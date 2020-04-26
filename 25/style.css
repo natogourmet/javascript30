@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #55b9f3;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+}
+
+.circle.active {
+  box-shadow: 20px 20px 60px #489dcf, -20px -20px 60px #62d5ff;
+}
+
+.circle-1 {
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
+  transform: rotate(0deg);
+  transition: box-shadow 0.2s 0.8s ease-in;
+}
+
+.circle-2 {
+  width: min(60vw, 60vh);
+  height: min(60vw, 60vh);
+  transition: box-shadow 0.4s 0.6s ease-in;
+}
+
+.circle-3 {
+  width: min(40vw, 40vh);
+  height: min(40vw, 40vh);
+  transition: box-shadow 0.6s 0.4s ease-in;
+}
+
+.circle-4 {
+  width: min(20vw, 20vh);
+  height: min(20vw, 20vh);
+  transition: box-shadow 0.8s 0.2s ease-in;
+}
+
+.circle-5 {
+  width: min(5vw, 5vh);
+  height: min(5vw, 5vh);
+  transition: box-shadow 1s ease-in;
+  background: linear-gradient(145deg, #5bc6ff, #4da7db);
+}
+
+.circle-5.active {
+  background: linear-gradient(145deg, #4da7db, #5bc6ff);
+
+}
