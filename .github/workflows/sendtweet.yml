@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "Back at it the GAME with a cool theme for Clash Royale lovers, hope y'all like it 
+          status: "A beautiful landscape with a Parallax effect for today's challenge, enoy~ 
           \n
-          \nDay 26/30 
-          \nGo check it at: https://natogourmet.github.io/javascript30/26/
+          \nDay 27/30 
+          \nGo check it at: https://natogourmet.github.io/javascript30/27/
           \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_KEY_SECRET }}
