@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS29/30 Nato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="timestamps">
+    <div data-time="10" class="option">
+      <span class="time">10 sec</span>
+      <span class="desc">FINAL COUNTDOWN</span>
+    </div>
+    <div data-time="60" class="option">
+      <span class="time">1 mins</span>
+      <span class="desc">QUICK REST</span>
+    </div>
+    <div data-time="300" class="option">
+      <span class="time">5 mins</span>
+      <span class="desc">BREAK</span>
+    </div>
+    <div data-time="900" class="option">
+      <span class="time">15 min</span>
+      <span class="desc">QUICK</span>
+    </div>
+    <div data-time="1800" class="option">
+      <span class="time">30 min</span>
+      <span class="desc">SNACK</span>
+    </div>
+    <div data-time="3600" class="option">
+      <span class="time">1 h</span>
+      <span class="desc">LUNCH</span>
+    </div>
+    <div data-time="5400" class="option">
+      <span class="time">1 h 30 min</span>
+      <span class="desc">NAP</span>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="percent">
+      <svg>
+        <circle cx="250" cy="250" r="250"></circle>
+        <circle cx="250" cy="250" r="250"></circle>
+      </svg>
+      <div class="number">
+        <div class="time">
+          <span class="hours">00</span>
+          <span class="measure">hours</span>
+        </div>
+        <span class="colons">:</span>
+        <div class="time">
+          <span class="mins">00</span>
+          <span class="measure">minutes</span>
+        </div>
+        <span class="colons">:</span>
+        <div class="time">
+          <span class="secs">00</span>
+          <span class="measure">seconds</span>
+        </div>
+      </div>
+    </div>
+    <form name="customForm" id="custom">
+      <input type="number" min="0" max="99" name="hours" placeholder="hours">
+      <input type="number" min="0" max="59" name="mins" placeholder="mins">
+      <input type="number" min="0" max="59" name="secs" placeholder="secs">
+      <input type="submit" min="0" max="59" value="SET">
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
