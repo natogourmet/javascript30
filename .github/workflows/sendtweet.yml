@@ -13,9 +13,11 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "One day left and i'm still sad, enjoy.
+          status: "I've learned a lot about JS through this challenge and autonomous learning, so thanks y'all for the support and thanks to @wesbos and @ManuCastrillonM for the opportunity!
           \n
-          \nDay 29/30 
+          \nWe're done for this time boys. c ya
+          \n
+          \nDay 30/30
           \nGo check it at: https://natogourmet.github.io/javascript30/29/
           \n#CodexJavaScript30"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}

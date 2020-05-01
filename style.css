@@ -2,7 +2,7 @@
   font-family: "Montserrat";
   color: white;
   background: black;
-  --completed: 97;
+  --completed: 100;
 }
 
 ::-webkit-scrollbar {
@@ -191,8 +191,8 @@ body {
 }
 
 .progress .percent svg circle:nth-child(2) {
-  stroke-dasharray: 610;
-  stroke-dashoffset: calc(610 - (610 * var(--completed)) / 100);
+  stroke-dasharray: 630;
+  stroke-dashoffset: calc(630 - (630 * var(--completed)) / 100);
   stroke: white;
 }
 
