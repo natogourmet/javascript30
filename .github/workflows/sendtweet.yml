@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: ethomson/send-tweet-action@v1
         with:
-          status: "I've learned a lot about JS through this challenge and autonomous learning, so thanks y'all for the support and thanks to @wesbos and @ManuCastrillonM for the opportunity!
+          status: "I've learned a lot about JS through this challenge, so thanks y'all for the support and thanks to @wesbos and @ManuCastrillonM for the opportunity!
           \n
           \nWe're done for this time boys. c ya
           \n
